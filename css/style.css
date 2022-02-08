@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181B;
+}
+
+.logo {
+    max-width: 310px;
+    margin-bottom: 24px;
+}
+
+.container-input {
+    max-width: 260px;
+    margin: 14px 0;
+}
+
+.container-input span {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #DFDFDF;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta {
+    height: 35px;
+    background: #3EB72B;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-cta:hover {
+    background-color: #2aa018;
+    letter-spacing: 1px;
+}
+
+.container-password {
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 14px 0;
+}
+
+.container-password .title {
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    margin: 24px 0 8px 0;
+}
+
+.container-password .password {
+    height: 60px;
+    line-height: 60px;
+    background: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    color: #3EB72B;
+    border: 1px solid #313131;
+    transition: all 0.5s;
+}
+
+.container-password .password:hover {
+    transform: scale(1.05);
+}
+
+.container-password .tootip {
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    background: rgba(15, 15, 15);
+    padding: 6px 8px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-password:hover .tootip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
